@@ -20,6 +20,7 @@ import logic.Constants.Filter;
  */
 public class FilterPanel extends JPanel {
 
+  private static final Filter[] FILTERS = Constants.Filter.values();
   private static final String TITLE = "Available Filters";
   private static final int COLS = 1;
 
@@ -32,7 +33,7 @@ public class FilterPanel extends JPanel {
   /**
    * constructor method to create a new filter panel that holds all available filters as buttons.
    */
-  public FilterPanel(){
+  public FilterPanel() {
     super(new BorderLayout(MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));
     this.gridPanel = new JPanel(new GridLayout(filters.length, COLS,
         MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));
@@ -47,7 +48,7 @@ public class FilterPanel extends JPanel {
     this.add(scrollPane, "Center");
     labelPanel.add(label);
     for (int i = 0; i < filters.length; i++) {
-      buttons[i] = new JButton(String.valueOf(i + 1));
+      buttons[i] = new JButton(String.valueOf(FILTERS[i]));
       gridPanel.add(buttons[i], i);
     }
   }
@@ -56,18 +57,22 @@ public class FilterPanel extends JPanel {
   public Filter[] getFilters() {
     return filters;
   }
+
   public JButton[] getButtons() {
     return buttons;
   }
+
   public void setButtons(JButton[] buttons) {
     this.buttons = buttons;
   }
+
   public void setButtonAt(JButton button, int index) {
     this.buttons[index] = button;
   }
 
   /**
    * method to get a specific button from the button array.
+   *
    * @param index int index where the button will be searched.
    * @return the button.
    */
@@ -77,10 +82,11 @@ public class FilterPanel extends JPanel {
 
   /**
    * method to get the corresponding name to any given button from the button array.
+   *
    * @param index int index of the button array where a name is needed.
    * @return String name for the button.
    */
-  public String getNameOf(int index){
+  public String getNameOf(int index) {
     return String.valueOf(filters[index]);
   }
 
@@ -88,7 +94,7 @@ public class FilterPanel extends JPanel {
    * method to remove all old buttons and replace them with updated ones.
    * might be useless.
    */
-  public void setButtonsOnGrid(){
+  public void setButtonsOnGrid() {
     gridPanel.removeAll();
     for (int i = 0; i < filters.length; i++) {
       gridPanel.add(buttons[i], i);

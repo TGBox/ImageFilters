@@ -17,13 +17,15 @@ import javax.swing.JPanel;
 public class ImagePanel extends JPanel {
 
   private JLabel imageLabel;
+  private BufferedImage image;
 
   /**
    * constructor method to create the new image panel.
    */
-  public ImagePanel(){
+  public ImagePanel() {
     super(new BorderLayout(MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));
     this.imageLabel = new JLabel("");
+    this.image = null;
     this.add(imageLabel, "Center");
   }
 
@@ -31,10 +33,12 @@ public class ImagePanel extends JPanel {
    * method to load an image onto the panel.
    * removes the current JLabel from the panel and adds the image to the JLabel as an image icon.
    * adds the label afterwards.
+   *
    * @param image BufferedImage that needs to be presented on panel.
    */
-  public void loadImageToPanel(BufferedImage image){
+  public void loadImageToPanel(BufferedImage image) {
     this.remove(imageLabel);
+    this.image = image;
     this.imageLabel = new JLabel(new ImageIcon(image));
     this.add(imageLabel, "Center");
   }
@@ -43,6 +47,11 @@ public class ImagePanel extends JPanel {
   public JLabel getImageLabel() {
     return imageLabel;
   }
+
+  public BufferedImage getImage() {
+    return image;
+  }
+
   public void setImageLabel(JLabel imageLabel) {
     this.imageLabel = imageLabel;
   }

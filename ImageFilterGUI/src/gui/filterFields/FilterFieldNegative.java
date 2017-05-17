@@ -1,5 +1,6 @@
-package gui;
+package gui.filterFields;
 
+import gui.MainGUI;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
@@ -14,7 +15,7 @@ import javax.swing.JPanel;
  * For "ImageFilterGUI",
  * on 12.05.2017, 00:50.
  */
-public class FilterFieldNegative extends JPanel{
+public class FilterFieldNegative extends JPanel {
 
   private static final String TITLE = "Negative Filter";
 
@@ -25,7 +26,7 @@ public class FilterFieldNegative extends JPanel{
   /**
    * constructor method to create a new filter field negative panel.
    */
-  public FilterFieldNegative(){
+  public FilterFieldNegative() {
     super(new BorderLayout(MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));
     this.labelPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,
         MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));
@@ -36,12 +37,14 @@ public class FilterFieldNegative extends JPanel{
     add(labelPanel, "North");
     add(buttonPanel, "Center");
     this.labelPanel.add(label);
+    this.buttonPanel.add(flipButton);
   }
 
   // Getter and setter methods.
   public JButton getFlipButton() {
     return flipButton;
   }
+
   public void setFlipButton(JButton flipButton) {
     this.flipButton = flipButton;
   }

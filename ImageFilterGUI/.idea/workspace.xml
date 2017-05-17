@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/FilterFieldNegative.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/FilterPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/ImagePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/MainGUI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/Constants.java" />
+    <list default="true" id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="gui adaptations">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/Filters.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/rawImg/EMail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/rawImg/Zimmer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Filters.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/TritoneFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/Core.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/FilterMethods.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/TestGUI.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/gui/FilterFieldNegative.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageFilterGUI.iml" afterPath="$PROJECT_DIR$/ImageFilterGUI.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FilterPanel.java" afterPath="$PROJECT_DIR$/src/gui/FilterPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ImagePanel.java" afterPath="$PROJECT_DIR$/src/gui/ImagePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MainGUI.java" afterPath="$PROJECT_DIR$/src/gui/MainGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/Constants.java" afterPath="$PROJECT_DIR$/src/logic/Constants.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,21 +31,35 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+            <state relative-caret-position="295">
+              <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-                <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#main#0;class#MainGUI#0" expanded="false" />
-                <element signature="class#4827:4918" expanded="true" />
-                <element signature="e#4880#4881#0" expanded="true" />
-                <element signature="e#4911#4912#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
+                <element signature="method#main#0;class#TestGUI#0" expanded="false" />
+                <element signature="class#2547:2638" expanded="true" />
+                <element signature="e#2600#2601#0" expanded="true" />
+                <element signature="e#2631#2632#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,12 +68,16 @@
       <file leaf-file-name="ImagePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state relative-caret-position="744">
+              <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ImagePanel#0" expanded="false" />
+                <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
                 <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+                <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
                 <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+                <element signature="e#1195#1196#0" expanded="false" />
+                <element signature="e#1222#1223#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,24 +86,118 @@
       <file leaf-file-name="FilterPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+            <state relative-caret-position="558">
+              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#FilterPanel#0" expanded="false" />
+                <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+                <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+                <element signature="e#1788#1789#0" expanded="false" />
+                <element signature="e#1812#1813#0" expanded="false" />
+                <element signature="e#1847#1848#0" expanded="false" />
+                <element signature="e#1871#1872#0" expanded="false" />
+                <element signature="e#1918#1919#0" expanded="false" />
+                <element signature="e#1950#1951#0" expanded="false" />
+                <element signature="e#2006#2007#0" expanded="false" />
+                <element signature="e#2044#2045#0" expanded="false" />
+                <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+                <element signature="e#2252#2253#0" expanded="false" />
+                <element signature="e#2283#2284#0" expanded="false" />
+                <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+                <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
                 <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterFieldNegative.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/FilterFieldNegative.java">
+      <file leaf-file-name="FilterMethods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+            <state relative-caret-position="31">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#applyNegativeFilter#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#getNegativeColorValue#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#defaultBlurFilter#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#swapColorsFilter#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#mirrorDiagonally#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#mirrorHorizontally#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#mirrorVertically#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#channelMixFilter#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#negativeFilter#0;class#FilterMethods#0" expanded="false" />
+                <element signature="method#sortImageAscending#0;class#FilterMethods#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Core.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/Core.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+              <folding>
+                <element signature="docComment;class#Core#0" expanded="false" />
+                <element signature="docComment;method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#openUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#saveImageToFile#0;class#Core#0" expanded="false" />
+                <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#getExt#0;class#Core#0" expanded="false" />
+                <element signature="method#getExt#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#readImageFromPath#0;class#Core#0" expanded="false" />
+                <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#imgToArray#0;class#Core#0" expanded="false" />
+                <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#arrayToImg#0;class#Core#0" expanded="false" />
+                <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#getMediumColor#0;class#Core#0" expanded="false" />
+                <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#getNegativeColor#0;class#Core#0" expanded="false" />
+                <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#r#0;class#Core#0" expanded="false" />
+                <element signature="method#r#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#imageRGB_Array#0;class#Core#0" expanded="false" />
+                <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#sortAscending#0;class#Core#0" expanded="false" />
+                <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#sortDescending#0;class#Core#0" expanded="false" />
+                <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#flipSignum#0;class#Core#0" expanded="false" />
+                <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
+                <element signature="docComment;method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+                <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterFieldNegative.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
                 <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterFieldBlur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,9 +206,14 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="310">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#Constants#0" expanded="false" />
+                <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+                <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+                <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,10 +238,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/gui/ImagePanel.java" />
-        <option value="$PROJECT_DIR$/src/logic/Constants.java" />
-        <option value="$PROJECT_DIR$/src/gui/FilterFieldNegative.java" />
         <option value="$PROJECT_DIR$/src/gui/FilterPanel.java" />
+        <option value="$PROJECT_DIR$/src/gui/FilterFieldNegative.java" />
+        <option value="$PROJECT_DIR$/src/logic/Constants.java" />
+        <option value="$PROJECT_DIR$/src/gui/ImagePanel.java" />
+        <option value="$PROJECT_DIR$/src/logic/Core.java" />
+        <option value="$PROJECT_DIR$/src/test/TestGUI.java" />
+        <option value="$PROJECT_DIR$/src/lib/TritoneFilter.java" />
+        <option value="$PROJECT_DIR$/src/logic/FilterMethods.java" />
+        <option value="$PROJECT_DIR$/src/gui/filterPanels/FilterFieldNegative.java" />
+        <option value="$PROJECT_DIR$/src/gui/filterPanels/FilterFieldBlur.java" />
+        <option value="$PROJECT_DIR$/src/gui/filters/FilterFieldBlur.java" />
+        <option value="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" />
         <option value="$PROJECT_DIR$/src/gui/MainGUI.java" />
       </list>
     </option>
@@ -142,6 +278,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,17 +307,121 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rawImg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageFilterGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filterFields" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Formatter/TextFormatter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/Filters.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nils Darmstrong\Documents\Git\TGBox\ImageFilters\ImageFilterGUI\src\res\rawImg" />
+      <recent name="C:\Users\Nils Darmstrong\Documents\Git\TGBox\ImageFilters\ImageFilterGUI\src\lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,11 +439,31 @@
     <configuration default="false" name="MainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="gui.*" />
+          <option name="PATTERN" value="gui.filterFields.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="gui.MainGUI" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ImageFilterGUI" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="test.TestGUI" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -430,12 +693,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.MainGUI" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestGUI" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.MainGUI" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -447,6 +712,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="" />
@@ -455,6 +723,14 @@
       <option name="presentableId" value="Default" />
       <updated>1494540531759</updated>
     </task>
+    <task id="LOCAL-00001" summary="gui classes created">
+      <created>1494543892432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1494543892432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -463,42 +739,43 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33984798" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5084746" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3403315" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5084746" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2934322" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -511,6 +788,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gui classes created" />
+    <MESSAGE value="gui adaptations" />
+    <option name="LAST_COMMIT_MESSAGE" value="gui adaptations" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -520,14 +802,211 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="230" column="19" lean-forward="false" selection-start-line="230" selection-start-column="19" selection-end-line="230" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#applyNegativeFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#getNegativeColorValue#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#defaultBlurFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#swapColorsFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorDiagonally#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorHorizontally#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorVertically#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#channelMixFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#negativeFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#sortImageAscending#0;class#FilterMethods#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="docComment;class#Core#0" expanded="false" />
+            <element signature="docComment;method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#openUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#saveImageToFile#0;class#Core#0" expanded="false" />
+            <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#getExt#0;class#Core#0" expanded="false" />
+            <element signature="method#getExt#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#readImageFromPath#0;class#Core#0" expanded="false" />
+            <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#imgToArray#0;class#Core#0" expanded="false" />
+            <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#arrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#getMediumColor#0;class#Core#0" expanded="false" />
+            <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#getNegativeColor#0;class#Core#0" expanded="false" />
+            <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#r#0;class#Core#0" expanded="false" />
+            <element signature="method#r#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#imageRGB_Array#0;class#Core#0" expanded="false" />
+            <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#sortAscending#0;class#Core#0" expanded="false" />
+            <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#sortDescending#0;class#Core#0" expanded="false" />
+            <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#flipSignum#0;class#Core#0" expanded="false" />
+            <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Constants#0" expanded="false" />
+            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -536,48 +1015,519 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FilterFieldNegative.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;class#Constants#0" expanded="false" />
+            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
-            <element signature="class#4827:4918" expanded="true" />
-            <element signature="e#4880#4881#0" expanded="true" />
-            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#Constants#0" expanded="false" />
+            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#Constants#0" expanded="false" />
+            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#Constants#0" expanded="false" />
+            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
+            <element signature="e#2252#2253#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
+            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Constants#0" expanded="false" />
+            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="docComment;class#Core#0" expanded="false" />
+            <element signature="docComment;method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#openUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#saveImageToFile#0;class#Core#0" expanded="false" />
+            <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#getExt#0;class#Core#0" expanded="false" />
+            <element signature="method#getExt#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#readImageFromPath#0;class#Core#0" expanded="false" />
+            <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#imgToArray#0;class#Core#0" expanded="false" />
+            <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#arrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#getMediumColor#0;class#Core#0" expanded="false" />
+            <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#getNegativeColor#0;class#Core#0" expanded="false" />
+            <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#r#0;class#Core#0" expanded="false" />
+            <element signature="method#r#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#imageRGB_Array#0;class#Core#0" expanded="false" />
+            <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#sortAscending#0;class#Core#0" expanded="false" />
+            <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#sortDescending#0;class#Core#0" expanded="false" />
+            <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#flipSignum#0;class#Core#0" expanded="false" />
+            <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
+            <element signature="docComment;method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
+            <element signature="method#main#0;class#TestGUI#0" expanded="false" />
+            <element signature="class#2547:2638" expanded="true" />
+            <element signature="e#2600#2601#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/TritoneFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#setMidColor#0;class#TritoneFilter#0" expanded="true" />
+            <element signature="docComment;method#setHighColor#0;class#TritoneFilter#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#applyNegativeFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#getNegativeColorValue#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#defaultBlurFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#swapColorsFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorDiagonally#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorHorizontally#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorVertically#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#channelMixFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#negativeFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#sortImageAscending#0;class#FilterMethods#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jdk1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ImageFilterGUI</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Filters</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
