@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+import javax.swing.border.BevelBorder;
 
 /**
  * Created by
@@ -19,8 +20,8 @@ import javax.swing.JSlider;
  */
 public class FFSwapColors extends JPanel {
 
-  // TODO make swap colors sliders horizontally aligned! and give them ticks and labels!
-  // TODO make selected colors visible on first selection of filter, give oldPanel and newPanel borders!
+  // TODO adjust ticks and labels
+  // TODO give additional options like swapping colors, taking colors via tool from image, setting a range for swapping the colors.
 
   private static final int GAP = 10;
 
@@ -50,21 +51,26 @@ public class FFSwapColors extends JPanel {
     color2Panel = new JPanel(new BorderLayout(GAP, GAP));
     preview1Panel = new JPanel(new BorderLayout(GAP, GAP));
     preview2Panel = new JPanel(new BorderLayout(GAP, GAP));
-    slider1Panel = new JPanel(new GridLayout(1, 3, GAP, GAP));
-    slider2Panel = new JPanel(new GridLayout(1, 3, GAP, GAP));
+    slider1Panel = new JPanel(new GridLayout(3, 1, GAP, GAP));
+    slider2Panel = new JPanel(new GridLayout(3, 1, GAP, GAP));
     buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
     oldPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+    oldPanel.setBorder(new BevelBorder(BevelBorder.LOWERED, Color.BLACK, Color.DARK_GRAY));
     newPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-    red1Slider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
-    red2Slider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
-    green1Slider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
-    green2Slider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
-    blue1Slider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
-    blue2Slider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
+    newPanel.setBorder(new BevelBorder(BevelBorder.RAISED, Color.BLACK, Color.DARK_GRAY));
+    red1Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    red1Slider.setPaintTicks(true);
+    red1Slider.setMinorTickSpacing(15);
+    red2Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    green1Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    green2Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    blue1Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    blue2Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
     swapButton = new JButton("Swap colors");
     generalLabel = new JLabel("Swap colors");
     color1Label = new JLabel("Old color");
     color2Label = new JLabel("New color");
+    updateColor();
   }
 
   /**
@@ -99,7 +105,7 @@ public class FFSwapColors extends JPanel {
    */
   private void addActionListeners() {
     red1Slider.addChangeListener(e -> updateColor());
-    red1Slider.addChangeListener(e -> updateColor());
+    red2Slider.addChangeListener(e -> updateColor());
     green1Slider.addChangeListener(e -> updateColor());
     green2Slider.addChangeListener(e -> updateColor());
     blue1Slider.addChangeListener(e -> updateColor());
