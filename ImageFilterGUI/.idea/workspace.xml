@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="gui adaptations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/Filters.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/rawImg/EMail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/rawImg/Zimmer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Filters.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/TritoneFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/Core.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/FilterMethods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/TestGUI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/gui/FilterFieldNegative.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFBlur.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFNegative.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageFilterGUI.iml" afterPath="$PROJECT_DIR$/ImageFilterGUI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FilterPanel.java" afterPath="$PROJECT_DIR$/src/gui/FilterPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ImagePanel.java" afterPath="$PROJECT_DIR$/src/gui/ImagePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MainGUI.java" afterPath="$PROJECT_DIR$/src/gui/MainGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/TritoneFilter.java" afterPath="$PROJECT_DIR$/src/lib/TritoneFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/Constants.java" afterPath="$PROJECT_DIR$/src/logic/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestGUI.java" afterPath="$PROJECT_DIR$/src/test/TestGUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,17 +23,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+            <state relative-caret-position="622">
+              <caret line="250" column="17" lean-forward="false" selection-start-line="250" selection-start-column="17" selection-end-line="250" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-                <element signature="method#main#0;class#MainGUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,15 +44,16 @@
       <file leaf-file-name="TestGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="434">
               <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#TestGUI#0" expanded="false" />
+                <element signature="docComment;method#TestGUI#0;class#TestGUI#0" expanded="false" />
                 <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
+                <element signature="e#1609#1723#0" expanded="false" />
+                <element signature="e#1756#1870#0" expanded="false" />
+                <element signature="docComment;method#main#0;class#TestGUI#0" expanded="false" />
                 <element signature="method#main#0;class#TestGUI#0" expanded="false" />
-                <element signature="class#2547:2638" expanded="true" />
-                <element signature="e#2600#2601#0" expanded="true" />
-                <element signature="e#2631#2632#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,9 +62,10 @@
       <file leaf-file-name="ImagePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+            <state relative-caret-position="589">
+              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="17" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="docComment;class#ImagePanel#0" expanded="false" />
                 <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
                 <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -78,6 +73,10 @@
                 <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
                 <element signature="e#1195#1196#0" expanded="false" />
                 <element signature="e#1222#1223#0" expanded="false" />
+                <element signature="e#1272#1273#0" expanded="false" />
+                <element signature="e#1310#1311#0" expanded="false" />
+                <element signature="e#1347#1348#0" expanded="false" />
+                <element signature="e#1369#1370#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -89,22 +88,7 @@
             <state relative-caret-position="558">
               <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
               <folding>
-                <element signature="docComment;class#FilterPanel#0" expanded="false" />
-                <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
                 <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-                <element signature="e#1788#1789#0" expanded="false" />
-                <element signature="e#1812#1813#0" expanded="false" />
-                <element signature="e#1847#1848#0" expanded="false" />
-                <element signature="e#1871#1872#0" expanded="false" />
-                <element signature="e#1918#1919#0" expanded="false" />
-                <element signature="e#1950#1951#0" expanded="false" />
-                <element signature="e#2006#2007#0" expanded="false" />
-                <element signature="e#2044#2045#0" expanded="false" />
-                <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-                <element signature="e#2252#2253#0" expanded="false" />
-                <element signature="e#2283#2284#0" expanded="false" />
-                <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-                <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
                 <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
               </folding>
             </state>
@@ -114,7 +98,7 @@
       <file leaf-file-name="FilterMethods.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
+            <state relative-caret-position="-155">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,68 +117,67 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FFSwapColors.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />
+                <element signature="method#initComponents#0;class#FFSwapColors#0" expanded="false" />
+                <element signature="method#addComponentsTogether#0;class#FFSwapColors#0" expanded="false" />
+                <element signature="method#addActionListeners#0;class#FFSwapColors#0" expanded="false" />
+                <element signature="method#updateColor#0;class#FFSwapColors#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Core.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/Core.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
               <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding>
-                <element signature="docComment;class#Core#0" expanded="false" />
-                <element signature="docComment;method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
                 <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#helpUserActionMethod#0;class#Core#0" expanded="false" />
                 <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#openUserActionMethod#0;class#Core#0" expanded="false" />
                 <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#saveUserActionMethod#0;class#Core#0" expanded="false" />
                 <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#saveImageToFile#0;class#Core#0" expanded="false" />
                 <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#getExt#0;class#Core#0" expanded="false" />
                 <element signature="method#getExt#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#readImageFromPath#0;class#Core#0" expanded="false" />
                 <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#imgToArray#0;class#Core#0" expanded="false" />
                 <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#arrayToImg#0;class#Core#0" expanded="false" />
                 <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#getMediumColor#0;class#Core#0" expanded="false" />
                 <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#getNegativeColor#0;class#Core#0" expanded="false" />
                 <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#r#0;class#Core#0" expanded="false" />
                 <element signature="method#r#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#imageRGB_Array#0;class#Core#0" expanded="false" />
                 <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#sortAscending#0;class#Core#0" expanded="false" />
                 <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#sortDescending#0;class#Core#0" expanded="false" />
                 <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#flipSignum#0;class#Core#0" expanded="false" />
                 <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
-                <element signature="docComment;method#rgbArrayToImg#0;class#Core#0" expanded="false" />
                 <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterFieldNegative.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+      <file leaf-file-name="FFNegative.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
               <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
-                <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+                <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterFieldBlur.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java">
+      <file leaf-file-name="FFBlur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFBlur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="775">
               <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -206,11 +189,9 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <element signature="docComment;class#Constants#0" expanded="false" />
-                <element signature="class#Filter#0;class#Constants#0" expanded="false" />
                 <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
                 <element signature="method#getNames#0;class#Constants#0" expanded="false" />
               </folding>
@@ -251,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/gui/filters/FilterFieldBlur.java" />
         <option value="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" />
         <option value="$PROJECT_DIR$/src/gui/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
       </list>
     </option>
   </component>
@@ -278,9 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -407,6 +386,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -730,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494543892432</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gui adaptations&#10;blur filter added, negative filter added, gui visualisation ready">
+      <created>1495049292306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495049292306</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -748,6 +737,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -758,7 +748,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -791,7 +780,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gui classes created" />
     <MESSAGE value="gui adaptations" />
-    <option name="LAST_COMMIT_MESSAGE" value="gui adaptations" />
+    <MESSAGE value="gui adaptations&#10;blur filter added, negative filter added, gui visualisation ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="gui adaptations&#10;blur filter added, negative filter added, gui visualisation ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -809,18 +799,37 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+          <folding>
+            <element signature="docComment;class#TestGUI#0" expanded="false" />
+            <element signature="docComment;method#TestGUI#0;class#TestGUI#0" expanded="false" />
+            <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
+            <element signature="e#1609#1723#0" expanded="false" />
+            <element signature="e#1756#1870#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#TestGUI#0" expanded="false" />
+            <element signature="method#main#0;class#TestGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
+        <state relative-caret-position="589">
           <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#ImagePanel#0" expanded="false" />
             <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -828,6 +837,10 @@
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="e#1195#1196#0" expanded="false" />
             <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -837,22 +850,132 @@
         <state relative-caret-position="558">
           <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding>
-            <element signature="docComment;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2044#2045#0" expanded="false" />
-            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#applyNegativeFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#getNegativeColorValue#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#defaultBlurFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#swapColorsFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorDiagonally#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorHorizontally#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#mirrorVertically#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#channelMixFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#negativeFilter#0;class#FilterMethods#0" expanded="false" />
+            <element signature="method#sortImageAscending#0;class#FilterMethods#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
+            <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
+            <element signature="method#getExt#0;class#Core#0" expanded="false" />
+            <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
+            <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
+            <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
+            <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
+            <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
+            <element signature="method#r#0;class#Core#0" expanded="false" />
+            <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
+            <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
+            <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
+            <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
+            <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFBlur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
+            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="docComment;method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
           </folding>
         </state>
@@ -883,51 +1006,33 @@
         <state relative-caret-position="217">
           <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
           <folding>
-            <element signature="docComment;class#Core#0" expanded="false" />
-            <element signature="docComment;method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#helpUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#openUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#saveUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#saveImageToFile#0;class#Core#0" expanded="false" />
             <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#getExt#0;class#Core#0" expanded="false" />
             <element signature="method#getExt#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#readImageFromPath#0;class#Core#0" expanded="false" />
             <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#imgToArray#0;class#Core#0" expanded="false" />
             <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#arrayToImg#0;class#Core#0" expanded="false" />
             <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#getMediumColor#0;class#Core#0" expanded="false" />
             <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#getNegativeColor#0;class#Core#0" expanded="false" />
             <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#r#0;class#Core#0" expanded="false" />
             <element signature="method#r#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#imageRGB_Array#0;class#Core#0" expanded="false" />
             <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#sortAscending#0;class#Core#0" expanded="false" />
             <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#sortDescending#0;class#Core#0" expanded="false" />
             <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#flipSignum#0;class#Core#0" expanded="false" />
             <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#rgbArrayToImg#0;class#Core#0" expanded="false" />
             <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding>
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -937,8 +1042,6 @@
         <state relative-caret-position="310">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Constants#0" expanded="false" />
-            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
             <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
             <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
@@ -952,9 +1055,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -964,6 +1069,7 @@
         <state relative-caret-position="651">
           <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#ImagePanel#0" expanded="false" />
             <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -971,6 +1077,10 @@
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="e#1195#1196#0" expanded="false" />
             <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -980,33 +1090,18 @@
         <state relative-caret-position="992">
           <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
           <folding>
-            <element signature="docComment;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2044#2045#0" expanded="false" />
-            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1016,8 +1111,6 @@
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
-            <element signature="docComment;class#Constants#0" expanded="false" />
-            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
             <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
             <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
@@ -1031,9 +1124,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1043,6 +1138,7 @@
         <state relative-caret-position="651">
           <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#ImagePanel#0" expanded="false" />
             <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -1050,6 +1146,10 @@
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="e#1195#1196#0" expanded="false" />
             <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1059,33 +1159,18 @@
         <state relative-caret-position="992">
           <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
           <folding>
-            <element signature="docComment;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2044#2045#0" expanded="false" />
-            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1095,8 +1180,6 @@
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
-            <element signature="docComment;class#Constants#0" expanded="false" />
-            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
             <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
             <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
@@ -1110,9 +1193,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1122,6 +1207,7 @@
         <state relative-caret-position="651">
           <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#ImagePanel#0" expanded="false" />
             <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -1129,6 +1215,10 @@
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="e#1195#1196#0" expanded="false" />
             <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1138,33 +1228,18 @@
         <state relative-caret-position="992">
           <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
           <folding>
-            <element signature="docComment;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2044#2045#0" expanded="false" />
-            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1174,8 +1249,6 @@
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
-            <element signature="docComment;class#Constants#0" expanded="false" />
-            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
             <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
             <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
@@ -1189,9 +1262,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1201,6 +1276,7 @@
         <state relative-caret-position="496">
           <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#ImagePanel#0" expanded="false" />
             <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -1208,6 +1284,10 @@
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="e#1195#1196#0" expanded="false" />
             <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1217,33 +1297,18 @@
         <state relative-caret-position="992">
           <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
           <folding>
-            <element signature="docComment;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2044#2045#0" expanded="false" />
-            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
             <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1253,47 +1318,17 @@
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
-            <element signature="docComment;class#Constants#0" expanded="false" />
-            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
             <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
             <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#1788#1789#0" expanded="false" />
-            <element signature="e#1812#1813#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1918#1919#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2044#2045#0" expanded="false" />
-            <element signature="docComment;method#getButtonAt#0;class#FilterPanel#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="docComment;method#getNameOf#0;class#FilterPanel#0" expanded="false" />
-            <element signature="docComment;method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
-            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="248">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Constants#0" expanded="false" />
-            <element signature="class#Filter#0;class#Constants#0" expanded="false" />
             <element signature="docComment;method#getNames#0;class#Constants#0" expanded="false" />
             <element signature="method#getNames#0;class#Constants#0" expanded="false" />
           </folding>
@@ -1302,9 +1337,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ImagePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="589">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="docComment;class#ImagePanel#0" expanded="false" />
             <element signature="docComment;method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
@@ -1312,6 +1348,10 @@
             <element signature="method#loadImageToPanel#0;class#ImagePanel#0" expanded="false" />
             <element signature="e#1195#1196#0" expanded="false" />
             <element signature="e#1222#1223#0" expanded="false" />
+            <element signature="e#1272#1273#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1321,40 +1361,22 @@
         <state relative-caret-position="217">
           <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
           <folding>
-            <element signature="docComment;class#Core#0" expanded="false" />
-            <element signature="docComment;method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#helpUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#openUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#saveUserActionMethod#0;class#Core#0" expanded="false" />
             <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#saveImageToFile#0;class#Core#0" expanded="false" />
             <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#getExt#0;class#Core#0" expanded="false" />
             <element signature="method#getExt#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#readImageFromPath#0;class#Core#0" expanded="false" />
             <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#imgToArray#0;class#Core#0" expanded="false" />
             <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#arrayToImg#0;class#Core#0" expanded="false" />
             <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#getMediumColor#0;class#Core#0" expanded="false" />
             <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#getNegativeColor#0;class#Core#0" expanded="false" />
             <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#r#0;class#Core#0" expanded="false" />
             <element signature="method#r#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#imageRGB_Array#0;class#Core#0" expanded="false" />
             <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#sortAscending#0;class#Core#0" expanded="false" />
             <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#sortDescending#0;class#Core#0" expanded="false" />
             <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#flipSignum#0;class#Core#0" expanded="false" />
             <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
-            <element signature="docComment;method#rgbArrayToImg#0;class#Core#0" expanded="false" />
             <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
           </folding>
         </state>
@@ -1362,15 +1384,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="434">
           <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#TestGUI#0" expanded="false" />
+            <element signature="docComment;method#TestGUI#0;class#TestGUI#0" expanded="false" />
             <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
+            <element signature="e#1609#1723#0" expanded="false" />
+            <element signature="e#1756#1870#0" expanded="false" />
+            <element signature="docComment;method#main#0;class#TestGUI#0" expanded="false" />
             <element signature="method#main#0;class#TestGUI#0" expanded="false" />
-            <element signature="class#2547:2638" expanded="true" />
-            <element signature="e#2600#2601#0" expanded="true" />
-            <element signature="e#2631#2632#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1387,9 +1410,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
+            <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFBlur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
+        <state relative-caret-position="-155">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1407,36 +1461,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="method#FilterFieldNegative#0;class#FilterFieldNegative#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+        <state relative-caret-position="622">
+          <caret line="250" column="17" lean-forward="false" selection-start-line="250" selection-start-column="17" selection-end-line="250" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />
+            <element signature="method#initComponents#0;class#FFSwapColors#0" expanded="false" />
+            <element signature="method#addComponentsTogether#0;class#FFSwapColors#0" expanded="false" />
+            <element signature="method#addActionListeners#0;class#FFSwapColors#0" expanded="false" />
+            <element signature="method#updateColor#0;class#FFSwapColors#0" expanded="false" />
           </folding>
         </state>
       </provider>

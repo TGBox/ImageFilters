@@ -38,7 +38,7 @@ public class TestGUI extends JFrame {
    *
    * works fine!
    */
-  private TestGUI(){
+  private TestGUI() {
     super("TestGUI");
     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     setLayout(new BorderLayout(10, 10));

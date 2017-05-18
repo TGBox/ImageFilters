@@ -14,7 +14,7 @@ import javax.swing.JPanel;
  * For "ImageFilterGUI",
  * on 17.05.2017, 21:07.
  */
-public class FilterFieldBlur extends JPanel{
+public class FFBlur extends JPanel {
 
   private JPanel buttonPanel, labelPanel;
   private JButton blurButton;
@@ -23,7 +23,7 @@ public class FilterFieldBlur extends JPanel{
   /**
    * constructor method to create the filter field for the blur filter.
    */
-  public FilterFieldBlur(){
+  public FFBlur() {
     super(new BorderLayout(10, 10));
     this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
     this.blurButton = new JButton("Blur image");
@@ -39,6 +39,7 @@ public class FilterFieldBlur extends JPanel{
   public JButton getBlurButton() {
     return blurButton;
   }
+
   public void setBlurButton(JButton blurButton) {
     this.blurButton = blurButton;
   }

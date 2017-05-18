@@ -1,7 +1,8 @@
 package gui;
 
-import gui.filterFields.FilterFieldBlur;
-import gui.filterFields.FilterFieldNegative;
+import gui.filterFields.FFBlur;
+import gui.filterFields.FFNegative;
+import gui.filterFields.FFSwapColors;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -14,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
@@ -36,21 +38,21 @@ import logic.FilterMethods;
  */
 public class MainGUI extends JFrame implements ActionListener {
 
+  public static final int LAYOUT_GAP = 10;
   private static final String[] FILTERS = Constants.getNames(Filter.class);
   private static final int WINDOW_WIDTH = 600;
   private static final int WINDOW_HEIGHT = 400;
-  public static final int LAYOUT_GAP = 10;
 
   // TODO make feedback dialog if image was saved or not
-
   private JMenuBar menuBar;
   private JMenu mainMenu;
   private JMenuItem openImageItem, saveImageItem, helpItem, aboutItem, exitItem;
   private ImagePanel imagePanel;
   private JPanel switchPanel;
   private FilterPanel filterPanel;
-  private FilterFieldNegative filterFieldNegative;
-  private FilterFieldBlur filterFieldBlur;
+  private FFNegative ffNegative;
+  private FFBlur ffBlur;
+  private FFSwapColors ffSwap;
   private BufferedImage image;
 
   private MainGUI() {
@@ -66,6 +68,27 @@ public class MainGUI extends JFrame implements ActionListener {
     setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
     setLocationRelativeTo(null);
     setVisible(true);
+  }
+
+  /**
+   * main method to get everything going. starts the gui within the designated thread.
+   *
+   * @param args .
+   */
+  public static void main(String[] args) {
+    try {
+      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+    } catch (ClassNotFoundException | InstantiationException |
+        UnsupportedLookAndFeelException | IllegalAccessException e) {
+      e.printStackTrace();
+    }
+    JComponent.setDefaultLocale(Locale.ENGLISH);
+    SwingUtilities.invokeLater(new Runnable() {
+      @Override
+      public void run() {
+        new MainGUI();
+      }
+    });
   }
 
   /**
@@ -89,8 +112,9 @@ public class MainGUI extends JFrame implements ActionListener {
     this.switchPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
     // Filter fields.
-    this.filterFieldNegative = new FilterFieldNegative();
-    this.filterFieldBlur = new FilterFieldBlur();
+    this.ffNegative = new FFNegative();
+    this.ffBlur = new FFBlur();
+    this.ffSwap = new FFSwapColors();
   }
 
   /**
@@ -110,7 +134,7 @@ public class MainGUI extends JFrame implements ActionListener {
     this.add(new JScrollPane(imagePanel, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
         JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED), "Center");
     this.add(switchPanel, "South");
-    switchPanel.add(filterFieldNegative);
+    switchPanel.add(ffNegative);
     this.add(filterPanel, "East");
   }
 
@@ -130,14 +154,20 @@ public class MainGUI extends JFrame implements ActionListener {
     exitItem.addActionListener(this);
     exitItem.setActionCommand("exit");
 
-    // Buttons for FilterFieldNegative.
-    this.filterFieldNegative.getFlipButton().addActionListener(this);
-    this.filterFieldNegative.getFlipButton().setActionCommand("negative");
+    // Buttons for ffNegative.
+    this.ffNegative.getFlipButton().addActionListener(this);
+    this.ffNegative.getFlipButton().setActionCommand("negative");
 
-    // Buttons for FilterFieldBlur.
-    this.filterFieldBlur.getBlurButton().addActionListener(this);
-    this.filterFieldBlur.getBlurButton().setActionCommand("blur");
+    // Buttons for ffBlur.
+    this.ffBlur.getBlurButton().addActionListener(this);
+    this.ffBlur.getBlurButton().setActionCommand("blur");
+
+    // Buttons for ffSwap.
+    this.ffSwap.getSwapButton().addActionListener(this);
+    this.ffSwap.getSwapButton().setActionCommand("swapColors");
   }
+
+  // TODO short test run showed that the implementation of the buttons does not work! test again sober!
 
   /**
    * method to create a new button that implements the action listener and uses it's caption as it's
@@ -154,8 +184,6 @@ public class MainGUI extends JFrame implements ActionListener {
     return button;
   }
 
-  // TODO short test run showed that the implementation of the buttons does not work! test again sober!
-
   /**
    * method that overrides the actionPerformed method of the ActionListener class.
    * the action commands will be the same as the captions used to create the buttons
@@ -165,51 +193,64 @@ public class MainGUI extends JFrame implements ActionListener {
   @Override
   public void actionPerformed(ActionEvent e) {
     String com = e.getActionCommand();
-    if (com.equals("open")) {
+    if (com.equals("open")) { // Menu items.
       imagePanel.loadImageToPanel(Core.openUserActionMethod());
       imagePanel.revalidate();
       imagePanel.repaint();
     } else if (com.equals("save")) {
-      Core.saveUserActionMethod(imagePanel.getImage());
+      if (Core.saveUserActionMethod(imagePanel.getImage())) {
+        JOptionPane.showMessageDialog(null, "Image was saved correctly!",
+            "Saving successful", JOptionPane.INFORMATION_MESSAGE);
+      } else {
+        JOptionPane.showMessageDialog(null, "Image could not be saved!\n"
+            + "Try again!", "Saving failed!", JOptionPane.ERROR_MESSAGE);
+      }
     } else if (com.equals("help")) {
       Core.helpUserActionMethod();
     } else if (com.equals("about")) {
       Core.aboutUserActionMethod();
     } else if (com.equals("exit")) {
       System.exit(0);
-    } else if (com.equals("negative")) {
+    } else if (com.equals("negative")) {  // Filter buttons.
       image = imagePanel.getImage();
       image = FilterMethods.negativeFilter(image);
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals("blur")){
+    } else if (com.equals("blur")) {
       image = imagePanel.getImage();
       image = FilterMethods.defaultBlurFilter(image);
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals(String.valueOf(Filter.Blur))){
-      swap(filterFieldBlur);
+    } else if(com.equals("swapColors")){
+      image = imagePanel.getImage();
+      image = FilterMethods.swapColorsFilter(image, ffSwap.getOldColor(), ffSwap.getNewColor());
+      imagePanel.loadImageToPanel(image);
+      imagePanel.revalidate();
+      imagePanel.repaint();
+    } else if (com.equals(String.valueOf(Filter.Blur))) {   // FilterField changes.
+      swap(ffBlur);
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.ChannelMix))){
+    } else if (com.equals(String.valueOf(Filter.ChannelMix))) {
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.MirrorDiagonally))){
+    } else if (com.equals(String.valueOf(Filter.MirrorDiagonally))) {
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.MirrorHorizontally))){
+    } else if (com.equals(String.valueOf(Filter.MirrorHorizontally))) {
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.MirrorVertically))){
+    } else if (com.equals(String.valueOf(Filter.MirrorVertically))) {
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.Negative))){
-      swap(filterFieldNegative);
+    } else if (com.equals(String.valueOf(Filter.Negative))) {
+      swap(ffNegative);
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.SortAscending))){
+    } else if (com.equals(String.valueOf(Filter.SortAscending))) {
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.SortDescending))){
+    } else if (com.equals(String.valueOf(Filter.SortDescending))) {
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.SwapColors))){
+    } else if (com.equals(String.valueOf(Filter.SwapColors))) {
+      swap(ffSwap);
       System.out.println(e.getActionCommand());
-    } else if(com.equals(String.valueOf(Filter.Tritone))){
+    } else if (com.equals(String.valueOf(Filter.Tritone))) {
       System.out.println(e.getActionCommand());
     } else {
       System.out.println("unknown command!");
@@ -225,31 +266,10 @@ public class MainGUI extends JFrame implements ActionListener {
    *
    * @param component the JComponent that will be added to the switch panel.
    */
-  private void swap(JComponent component){
+  private void swap(JComponent component) {
     this.switchPanel.removeAll();
     this.switchPanel.add(component);
     this.revalidate();
     this.repaint();
-  }
-
-  /**
-   * main method to get everything going. starts the gui within the designated thread.
-   *
-   * @param args .
-   */
-  public static void main(String[] args) {
-    try {
-      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-    } catch (ClassNotFoundException | InstantiationException |
-        UnsupportedLookAndFeelException | IllegalAccessException e) {
-      e.printStackTrace();
-    }
-    JComponent.setDefaultLocale(Locale.ENGLISH);
-    SwingUtilities.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        new MainGUI();
-      }
-    });
   }
 }

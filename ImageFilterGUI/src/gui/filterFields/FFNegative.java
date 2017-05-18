@@ -15,7 +15,7 @@ import javax.swing.JPanel;
  * For "ImageFilterGUI",
  * on 12.05.2017, 00:50.
  */
-public class FilterFieldNegative extends JPanel {
+public class FFNegative extends JPanel {
 
   private static final String TITLE = "Negative Filter";
 
@@ -26,7 +26,7 @@ public class FilterFieldNegative extends JPanel {
   /**
    * constructor method to create a new filter field negative panel.
    */
-  public FilterFieldNegative() {
+  public FFNegative() {
     super(new BorderLayout(MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));
     this.labelPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,
         MainGUI.LAYOUT_GAP, MainGUI.LAYOUT_GAP));

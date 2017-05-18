@@ -48,11 +48,11 @@ public class ImagePanel extends JPanel {
     return imageLabel;
   }
 
-  public BufferedImage getImage() {
-    return image;
-  }
-
   public void setImageLabel(JLabel imageLabel) {
     this.imageLabel = imageLabel;
+  }
+
+  public BufferedImage getImage() {
+    return image;
   }
 }
