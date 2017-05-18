@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFBlur.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/gui/filterFields/FilterFieldNegative.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFNegative.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ImagePanel.java" afterPath="$PROJECT_DIR$/src/gui/ImagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MainGUI.java" afterPath="$PROJECT_DIR$/src/gui/MainGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/TritoneFilter.java" afterPath="$PROJECT_DIR$/src/lib/TritoneFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/Constants.java" afterPath="$PROJECT_DIR$/src/logic/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/TestGUI.java" afterPath="$PROJECT_DIR$/src/test/TestGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,8 +113,8 @@
       <file leaf-file-name="FFSwapColors.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+            <state relative-caret-position="465">
+              <caret line="22" column="104" lean-forward="false" selection-start-line="22" selection-start-column="104" selection-end-line="22" selection-end-column="104" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />
@@ -719,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495049292306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="swap colors filter added">
+      <created>1495140885771</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495140885771</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -781,7 +781,8 @@
     <MESSAGE value="gui classes created" />
     <MESSAGE value="gui adaptations" />
     <MESSAGE value="gui adaptations&#10;blur filter added, negative filter added, gui visualisation ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="gui adaptations&#10;blur filter added, negative filter added, gui visualisation ready" />
+    <MESSAGE value="swap colors filter added" />
+    <option name="LAST_COMMIT_MESSAGE" value="swap colors filter added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1479,8 +1480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+        <state relative-caret-position="465">
+          <caret line="22" column="104" lean-forward="false" selection-start-line="22" selection-start-column="104" selection-end-line="22" selection-end-column="104" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />

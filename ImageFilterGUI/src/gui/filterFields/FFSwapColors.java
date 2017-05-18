@@ -20,6 +20,7 @@ import javax.swing.JSlider;
 public class FFSwapColors extends JPanel {
 
   // TODO make swap colors sliders horizontally aligned! and give them ticks and labels!
+  // TODO make selected colors visible on first selection of filter, give oldPanel and newPanel borders!
 
   private static final int GAP = 10;
 
