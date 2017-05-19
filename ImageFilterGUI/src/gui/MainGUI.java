@@ -1,6 +1,9 @@
 package gui;
 
 import gui.filterFields.FFBlur;
+import gui.filterFields.FFMirrorD;
+import gui.filterFields.FFMirrorH;
+import gui.filterFields.FFMirrorV;
 import gui.filterFields.FFNegative;
 import gui.filterFields.FFSwapColors;
 import java.awt.BorderLayout;
@@ -50,9 +53,14 @@ public class MainGUI extends JFrame implements ActionListener {
   private ImagePanel imagePanel;
   private JPanel switchPanel;
   private FilterPanel filterPanel;
+
   private FFNegative ffNegative;
   private FFBlur ffBlur;
   private FFSwapColors ffSwap;
+  private FFMirrorD ffMirrorD;
+  private FFMirrorH ffMirrorH;
+  private FFMirrorV ffMirrorV;
+
   private BufferedImage image;
 
   private MainGUI() {
@@ -115,6 +123,9 @@ public class MainGUI extends JFrame implements ActionListener {
     this.ffNegative = new FFNegative();
     this.ffBlur = new FFBlur();
     this.ffSwap = new FFSwapColors();
+    this.ffMirrorD = new FFMirrorD();
+    this.ffMirrorH = new FFMirrorH();
+    this.ffMirrorV = new FFMirrorV();
   }
 
   /**
@@ -165,9 +176,15 @@ public class MainGUI extends JFrame implements ActionListener {
     // Buttons for ffSwap.
     this.ffSwap.getSwapButton().addActionListener(this);
     this.ffSwap.getSwapButton().setActionCommand("swapColors");
-  }
 
-  // TODO short test run showed that the implementation of the buttons does not work! test again sober!
+    // Buttons for ffMirrorD/H/V.
+    this.ffMirrorD.getMirrorButton().addActionListener(this);
+    this.ffMirrorD.getMirrorButton().setActionCommand("mirrorD");
+    this.ffMirrorH.getMirrorButton().addActionListener(this);
+    this.ffMirrorH.getMirrorButton().setActionCommand("mirrorH");
+    this.ffMirrorV.getMirrorButton().addActionListener(this);
+    this.ffMirrorV.getMirrorButton().setActionCommand("mirrorV");
+  }
 
   /**
    * method to create a new button that implements the action listener and uses it's caption as it's
@@ -223,9 +240,27 @@ public class MainGUI extends JFrame implements ActionListener {
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals("swapColors")){
+    } else if(com.equals("swapColors")) {
       image = imagePanel.getImage();
       image = FilterMethods.swapColorsFilter(image, ffSwap.getOldColor(), ffSwap.getNewColor());
+      imagePanel.loadImageToPanel(image);
+      imagePanel.revalidate();
+      imagePanel.repaint();
+    } else if(com.equals("mirrorD")){
+      image = imagePanel.getImage();
+      image = FilterMethods.mirrorDiagonally(image);
+      imagePanel.loadImageToPanel(image);
+      imagePanel.revalidate();
+      imagePanel.repaint();
+    } else if(com.equals("mirrorH")){
+      image = imagePanel.getImage();
+      image = FilterMethods.mirrorHorizontally(image);
+      imagePanel.loadImageToPanel(image);
+      imagePanel.revalidate();
+      imagePanel.repaint();
+    } else if(com.equals("mirrorV")){
+      image = imagePanel.getImage();
+      image = FilterMethods.mirrorVertically(image);
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
@@ -235,10 +270,13 @@ public class MainGUI extends JFrame implements ActionListener {
     } else if (com.equals(String.valueOf(Filter.ChannelMix))) {
       System.out.println(e.getActionCommand());
     } else if (com.equals(String.valueOf(Filter.MirrorDiagonally))) {
+      swap(ffMirrorD);
       System.out.println(e.getActionCommand());
     } else if (com.equals(String.valueOf(Filter.MirrorHorizontally))) {
+      swap(ffMirrorH);
       System.out.println(e.getActionCommand());
     } else if (com.equals(String.valueOf(Filter.MirrorVertically))) {
+      swap(ffMirrorV);
       System.out.println(e.getActionCommand());
     } else if (com.equals(String.valueOf(Filter.Negative))) {
       swap(ffNegative);
