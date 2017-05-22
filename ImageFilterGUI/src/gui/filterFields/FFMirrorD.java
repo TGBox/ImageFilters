@@ -14,7 +14,7 @@ import javax.swing.JPanel;
  * For "ImageFilterGUI",
  * on 19.05.2017, 12:10.
  */
-public class FFMirrorD extends JPanel{
+public class FFMirrorD extends JPanel {
 
   private static final int GAP = 10;
 
@@ -25,7 +25,7 @@ public class FFMirrorD extends JPanel{
   /**
    * constructor method to create a new Filter field for the mirror diagonally filter.
    */
-  public FFMirrorD(){
+  public FFMirrorD() {
     super(new BorderLayout(GAP, GAP));
     this.labelPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
     this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
@@ -41,6 +41,7 @@ public class FFMirrorD extends JPanel{
   public JButton getMirrorButton() {
     return mirrorButton;
   }
+
   public void setMirrorButton(JButton mirrorButton) {
     this.mirrorButton = mirrorButton;
   }

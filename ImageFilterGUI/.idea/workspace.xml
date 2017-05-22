@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="276c82ec-bff6-491f-bec0-68ee1a906d95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/colors.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFSortAscending.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/ColorSelectPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MainGUI.java" afterPath="$PROJECT_DIR$/src/gui/MainGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" afterPath="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,18 +23,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="247" column="27" lean-forward="false" selection-start-line="247" selection-start-column="27" selection-end-line="247" selection-end-column="27" />
+            <state relative-caret-position="3089">
+              <caret line="297" column="20" lean-forward="false" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#main#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-                <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
               </folding>
@@ -44,30 +47,21 @@
             <state relative-caret-position="434">
               <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#TestGUI#0" expanded="false" />
-                <element signature="docComment;method#TestGUI#0;class#TestGUI#0" expanded="false" />
                 <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
-                <element signature="e#1609#1723#0" expanded="false" />
-                <element signature="e#1756#1870#0" expanded="false" />
-                <element signature="docComment;method#main#0;class#TestGUI#0" expanded="false" />
                 <element signature="method#main#0;class#TestGUI#0" expanded="false" />
-                <element signature="class#2548:2639" expanded="false" />
-                <element signature="e#2601#2602#0" expanded="false" />
-                <element signature="e#2632#2633#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/FilterPanel.java">
+      <file leaf-file-name="ColorSelectPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/ColorSelectPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="450">
+              <caret line="30" column="82" lean-forward="false" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
               <folding>
-                <element signature="method#FilterPanel#0;class#FilterPanel#0" expanded="false" />
-                <element signature="method#setButtonsOnGrid#0;class#FilterPanel#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#ColorSelectPanel#0;class#ColorSelectPanel#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +70,7 @@
       <file leaf-file-name="FilterMethods.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
+            <state relative-caret-position="-837">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,18 +89,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FFSortAscending.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSortAscending.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#FFSortAscending#0;class#FFSortAscending#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FFMirrorD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="45" selection-end-column="3" />
+            <state relative-caret-position="217">
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FFMirrorD#0;class#FFMirrorD#0" expanded="false" />
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1129#1130#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,15 +122,15 @@
       <file leaf-file-name="FFMirrorH.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="403">
               <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FFMirrorH#0;class#FFMirrorH#0" expanded="false" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,7 +139,7 @@
       <file leaf-file-name="FFMirrorV.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
+            <state relative-caret-position="434">
               <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,26 +152,14 @@
       <file leaf-file-name="FFSwapColors.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="270">
+              <caret line="23" column="110" lean-forward="false" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />
                 <element signature="method#initComponents#0;class#FFSwapColors#0" expanded="false" />
                 <element signature="method#addComponentsTogether#0;class#FFSwapColors#0" expanded="false" />
                 <element signature="method#updateColor#0;class#FFSwapColors#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FFNegative.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFNegative.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="method#FFNegative#0;class#FFNegative#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -214,12 +209,14 @@
         <option value="$PROJECT_DIR$/src/gui/filterPanels/FilterFieldBlur.java" />
         <option value="$PROJECT_DIR$/src/gui/filters/FilterFieldBlur.java" />
         <option value="$PROJECT_DIR$/src/gui/filterFields/FilterFieldBlur.java" />
-        <option value="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
         <option value="$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java" />
         <option value="$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java" />
         <option value="$PROJECT_DIR$/src/gui/filterFields/FFMirorV.java" />
         <option value="$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java" />
+        <option value="$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java" />
+        <option value="$PROJECT_DIR$/src/gui/filterFields/FFSortAscending.java" />
         <option value="$PROJECT_DIR$/src/gui/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/test/ColorSelectPanel.java" />
       </list>
     </option>
   </component>
@@ -247,6 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,26 +271,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rawImg" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,76 +287,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageFilterGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filterFields" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495142290958</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mirroring filters added">
+      <created>1495189749080</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1495189749080</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -739,23 +663,23 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33984798" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -792,7 +716,8 @@
     <MESSAGE value="swap colors filter added" />
     <MESSAGE value="todo added for SwapColorsFilter" />
     <MESSAGE value="swap colors filter adjusted" />
-    <option name="LAST_COMMIT_MESSAGE" value="swap colors filter adjusted" />
+    <MESSAGE value="mirroring filters added" />
+    <option name="LAST_COMMIT_MESSAGE" value="mirroring filters added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -803,53 +728,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />
-            <element signature="method#initComponents#0;class#FFSwapColors#0" expanded="false" />
-            <element signature="method#addComponentsTogether#0;class#FFSwapColors#0" expanded="false" />
-            <element signature="method#updateColor#0;class#FFSwapColors#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#TestGUI#0" expanded="false" />
-            <element signature="docComment;method#TestGUI#0;class#TestGUI#0" expanded="false" />
             <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
-            <element signature="e#1609#1723#0" expanded="false" />
-            <element signature="e#1756#1870#0" expanded="false" />
-            <element signature="docComment;method#main#0;class#TestGUI#0" expanded="false" />
             <element signature="method#main#0;class#TestGUI#0" expanded="false" />
-            <element signature="class#2548:2639" expanded="false" />
-            <element signature="e#2601#2602#0" expanded="false" />
-            <element signature="e#2632#2633#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -900,25 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
-            <element signature="method#getExt#0;class#Core#0" expanded="false" />
-            <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
-            <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
-            <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
-            <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
-            <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
-            <element signature="method#r#0;class#Core#0" expanded="false" />
-            <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
-            <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
-            <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
-            <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
-            <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,9 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,7 +825,6 @@
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
             <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
             <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
           </folding>
@@ -1015,25 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
-            <element signature="method#getExt#0;class#Core#0" expanded="false" />
-            <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
-            <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
-            <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
-            <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
-            <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
-            <element signature="method#r#0;class#Core#0" expanded="false" />
-            <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
-            <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
-            <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
-            <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
-            <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,9 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,7 +907,6 @@
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
             <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
             <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
           </folding>
@@ -1110,9 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,7 +962,6 @@
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
             <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
             <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
           </folding>
@@ -1169,9 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1185,7 +1017,6 @@
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
             <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
             <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
           </folding>
@@ -1228,9 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,7 +1072,6 @@
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
             <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
             <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
           </folding>
@@ -1287,9 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1297,9 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="method#getNames#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,45 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <element signature="method#aboutUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#helpUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#openUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#saveUserActionMethod#0;class#Core#0" expanded="false" />
-            <element signature="method#saveImageToFile#0;class#Core#0" expanded="false" />
-            <element signature="method#getExt#0;class#Core#0" expanded="false" />
-            <element signature="method#readImageFromPath#0;class#Core#0" expanded="false" />
-            <element signature="method#imgToArray#0;class#Core#0" expanded="false" />
-            <element signature="method#arrayToImg#0;class#Core#0" expanded="false" />
-            <element signature="method#getMediumColor#0;class#Core#0" expanded="false" />
-            <element signature="method#getNegativeColor#0;class#Core#0" expanded="false" />
-            <element signature="method#r#0;class#Core#0" expanded="false" />
-            <element signature="method#imageRGB_Array#0;class#Core#0" expanded="false" />
-            <element signature="method#sortAscending#0;class#Core#0" expanded="false" />
-            <element signature="method#sortDescending#0;class#Core#0" expanded="false" />
-            <element signature="method#flipSignum#0;class#Core#0" expanded="false" />
-            <element signature="method#rgbArrayToImg#0;class#Core#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#TestGUI#0" expanded="false" />
-            <element signature="docComment;method#TestGUI#0;class#TestGUI#0" expanded="false" />
-            <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
-            <element signature="e#1609#1723#0" expanded="false" />
-            <element signature="e#1756#1870#0" expanded="false" />
-            <element signature="docComment;method#main#0;class#TestGUI#0" expanded="false" />
-            <element signature="method#main#0;class#TestGUI#0" expanded="false" />
-            <element signature="class#2548:2639" expanded="false" />
-            <element signature="e#2601#2602#0" expanded="false" />
-            <element signature="e#2632#2633#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1398,10 +1180,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="46" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FFMirrorD#0;class#FFMirrorD#0" expanded="false" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FFMirrorH#0;class#FFMirrorH#0" expanded="false" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FFMirrorV#0;class#FFMirrorV#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSwapColors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="270">
+          <caret line="23" column="110" lean-forward="false" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#FFSwapColors#0;class#FFSwapColors#0" expanded="false" />
@@ -1412,50 +1235,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="45" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FFMirrorD#0;class#FFMirrorD#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FFMirrorH#0;class#FFMirrorH#0" expanded="false" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFMirrorV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FFMirrorV#0;class#FFMirrorV#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/FilterMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
+        <state relative-caret-position="-837">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1473,19 +1255,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/filterFields/FFSortAscending.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FFSortAscending#0;class#FFSortAscending#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="247" column="27" lean-forward="false" selection-start-line="247" selection-start-column="27" selection-end-line="247" selection-end-column="27" />
+        <state relative-caret-position="3089">
+          <caret line="297" column="20" lean-forward="false" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
             <element signature="method#initComponents#0;class#MainGUI#0" expanded="false" />
             <element signature="method#addComponentsTogether#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#addActionListeners#0;class#MainGUI#0" expanded="false" />
             <element signature="method#makeButton#0;class#MainGUI#0" expanded="false" />
             <element signature="method#swap#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+          <folding>
+            <element signature="method#TestGUI#0;class#TestGUI#0" expanded="false" />
+            <element signature="method#main#0;class#TestGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ColorSelectPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="82" lean-forward="false" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#ColorSelectPanel#0;class#ColorSelectPanel#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,38 +12,34 @@ import javax.swing.JPanel;
  * as "Nils Darmstrong".
  * -----------------
  * For "ImageFilterGUI",
- * on 19.05.2017, 12:15.
+ * on 22.05.2017, 16:42.
  */
-public class FFMirrorH extends JPanel {
+public class FFSortAscending extends JPanel {
 
   private static final int GAP = 10;
 
   private JPanel labelPanel, buttonPanel;
-  private JButton mirrorButton;
   private JLabel label;
+  private JButton sortButton;
 
-  /**
-   * constructor method to create a new Filter field for the mirror horizontally filter.
-   */
-  public FFMirrorH() {
+  public FFSortAscending() {
     super(new BorderLayout(GAP, GAP));
     this.labelPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
     this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
-    mirrorButton = new JButton("Mirror");
-    label = new JLabel("Mirror image horizontally");
-    this.add(labelPanel, "North");
-    this.add(buttonPanel, "Center");
+    this.label = new JLabel("Sort image by ascending color values");
+    this.sortButton = new JButton("Sort");
+    add(labelPanel, "North");
+    add(buttonPanel, "Center");
     labelPanel.add(label);
-    buttonPanel.add(mirrorButton);
+    buttonPanel.add(sortButton);
   }
 
   // Getter and setter methods.
-  public JButton getMirrorButton() {
-    return mirrorButton;
+  public JButton getSortButton() {
+    return sortButton;
   }
 
-  public void setMirrorButton(JButton mirrorButton) {
-    this.mirrorButton = mirrorButton;
+  public void setSortButton(JButton sortButton) {
+    this.sortButton = sortButton;
   }
-
 }

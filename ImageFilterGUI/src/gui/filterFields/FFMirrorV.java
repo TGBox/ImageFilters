@@ -25,7 +25,7 @@ public class FFMirrorV extends JPanel {
   /**
    * constructor method to create a new Filter field for the mirror vertically filter.
    */
-  public FFMirrorV(){
+  public FFMirrorV() {
     super(new BorderLayout(GAP, GAP));
     this.labelPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
     this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, GAP, GAP));
@@ -41,6 +41,7 @@ public class FFMirrorV extends JPanel {
   public JButton getMirrorButton() {
     return mirrorButton;
   }
+
   public void setMirrorButton(JButton mirrorButton) {
     this.mirrorButton = mirrorButton;
   }

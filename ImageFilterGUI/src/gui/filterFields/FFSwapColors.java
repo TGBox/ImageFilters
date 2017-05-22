@@ -20,9 +20,8 @@ import javax.swing.border.BevelBorder;
  */
 public class FFSwapColors extends JPanel {
 
-  // TODO adjust ticks and labels
   // TODO give additional options like swapping colors, taking colors via tool from image, setting a range for swapping the colors.
-
+  // TODO set specified boundaries for the panel so that it does not take too much space from the whole window
   private static final int GAP = 10;
 
   private JPanel labelPanel, gridPanel, color1Panel, color2Panel,
@@ -62,10 +61,20 @@ public class FFSwapColors extends JPanel {
     red1Slider.setPaintTicks(true);
     red1Slider.setMinorTickSpacing(15);
     red2Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    red2Slider.setPaintTicks(true);
+    red2Slider.setMinorTickSpacing(15);
     green1Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    green1Slider.setPaintTicks(true);
+    green1Slider.setMinorTickSpacing(15);
     green2Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    green2Slider.setPaintTicks(true);
+    green2Slider.setMinorTickSpacing(15);
     blue1Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    blue1Slider.setPaintTicks(true);
+    blue1Slider.setMinorTickSpacing(15);
     blue2Slider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+    blue2Slider.setPaintTicks(true);
+    blue2Slider.setMinorTickSpacing(15);
     swapButton = new JButton("Swap colors");
     generalLabel = new JLabel("Swap colors");
     color1Label = new JLabel("Old color");
@@ -128,13 +137,16 @@ public class FFSwapColors extends JPanel {
   public JButton getSwapButton() {
     return swapButton;
   }
+
   public void setSwapButton(JButton swapButton) {
     this.swapButton = swapButton;
   }
-  public Color getOldColor(){
+
+  public Color getOldColor() {
     return this.oldPanel.getBackground();
   }
-  public Color getNewColor(){
+
+  public Color getNewColor() {
     return this.newPanel.getBackground();
   }
 }

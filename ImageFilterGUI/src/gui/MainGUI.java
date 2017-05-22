@@ -5,6 +5,7 @@ import gui.filterFields.FFMirrorD;
 import gui.filterFields.FFMirrorH;
 import gui.filterFields.FFMirrorV;
 import gui.filterFields.FFNegative;
+import gui.filterFields.FFSortAscending;
 import gui.filterFields.FFSwapColors;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -60,6 +61,7 @@ public class MainGUI extends JFrame implements ActionListener {
   private FFMirrorD ffMirrorD;
   private FFMirrorH ffMirrorH;
   private FFMirrorV ffMirrorV;
+  private FFSortAscending ffSortAsc;
 
   private BufferedImage image;
 
@@ -126,6 +128,7 @@ public class MainGUI extends JFrame implements ActionListener {
     this.ffMirrorD = new FFMirrorD();
     this.ffMirrorH = new FFMirrorH();
     this.ffMirrorV = new FFMirrorV();
+    this.ffSortAsc = new FFSortAscending();
   }
 
   /**
@@ -184,6 +187,10 @@ public class MainGUI extends JFrame implements ActionListener {
     this.ffMirrorH.getMirrorButton().setActionCommand("mirrorH");
     this.ffMirrorV.getMirrorButton().addActionListener(this);
     this.ffMirrorV.getMirrorButton().setActionCommand("mirrorV");
+
+    // Buttons for ffSortAsc.
+    this.ffSortAsc.getSortButton().addActionListener(this);
+    this.ffSortAsc.getSortButton().setActionCommand("sortAsc");
   }
 
   /**
@@ -240,27 +247,33 @@ public class MainGUI extends JFrame implements ActionListener {
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals("swapColors")) {
+    } else if (com.equals("swapColors")) {
       image = imagePanel.getImage();
       image = FilterMethods.swapColorsFilter(image, ffSwap.getOldColor(), ffSwap.getNewColor());
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals("mirrorD")){
+    } else if (com.equals("mirrorD")) {
       image = imagePanel.getImage();
       image = FilterMethods.mirrorDiagonally(image);
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals("mirrorH")){
+    } else if (com.equals("mirrorH")) {
       image = imagePanel.getImage();
       image = FilterMethods.mirrorHorizontally(image);
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
-    } else if(com.equals("mirrorV")){
+    } else if (com.equals("mirrorV")) {
       image = imagePanel.getImage();
       image = FilterMethods.mirrorVertically(image);
+      imagePanel.loadImageToPanel(image);
+      imagePanel.revalidate();
+      imagePanel.repaint();
+    } else if(com.equals("sortAsc")){
+      image = imagePanel.getImage();
+      image = FilterMethods.sortImageAscending(image);
       imagePanel.loadImageToPanel(image);
       imagePanel.revalidate();
       imagePanel.repaint();
@@ -282,6 +295,7 @@ public class MainGUI extends JFrame implements ActionListener {
       swap(ffNegative);
       System.out.println(e.getActionCommand());
     } else if (com.equals(String.valueOf(Filter.SortAscending))) {
+      swap(ffSortAsc);
       System.out.println(e.getActionCommand());
     } else if (com.equals(String.valueOf(Filter.SortDescending))) {
       System.out.println(e.getActionCommand());
